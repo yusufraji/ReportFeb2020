@@ -1,0 +1,61 @@
+\begin{thebibliography}{10}
+
+\bibitem{Sarmiento2018}
+S.~Sarmiento, A.~Gran, and J.~A. Altabas, ``{Experimental Assessment of
+  5-10Gbps 5G Multicarrier Waveforms with Intensity-Modulation Direct-Detection
+  for PONs},'' no.~September, pp.~5--8, 2018.
+
+\bibitem{Eldessoki2017}
+S.~Eldessoki, D.~Wieruch, and B.~Holfeld, ``{Impact of waveforms on coexistence
+  of mixed numerologies in 5G URLLC networks},'' {\em 21st International ITG
+  Workshop on Smart Antennas, WSA 2017}, pp.~354--359, 2017.
+
+\bibitem{Delmade2017}
+A.~Delmade, C.~Browning, A.~Farhang, N.~Marchetti, L.~E. Doyle, D.~Koilpillai,
+  L.~P. Barry, and D.~Venkitesh, ``{Performance analysis of optical
+  front-hauling for 5G Waveforms},'' in {\em Optics InfoBase Conference
+  Papers}, vol.~Part F82-C, pp.~1--1, IEEE, jun 2017.
+
+\bibitem{Tipan2018}
+M.~N. Tipan, A.~T. Berenice, and G.~V. Arevalo, ``{GFDM and LTE Data
+  Convergence Test in Optical Access Networks},'' in {\em 2018 IEEE Third
+  Ecuador Technical Chapters Meeting (ETCM)}, pp.~1--4, IEEE, oct 2018.
+
+\bibitem{Browning2017}
+C.~Browning, A.~Farhang, A.~Saljoghei, N.~Marchetti, V.~Vujicic, L.~E. Doyle,
+  and L.~P. Barry, ``{5G wireless and wired convergence in a passive optical
+  network using UF-OFDM and GFDM},'' {\em 2017 IEEE International Conference on
+  Communications Workshops, ICC Workshops 2017}, pp.~386--392, may 2017.
+
+\bibitem{Chang2017}
+G.-k. Chang and L.~Cheng, ``{Fiber-Wireless Integration for Future Mobile
+  Communications},'' {\em 2017 IEEE Radio and Wireless Symposium (RWS)},
+  pp.~16--18, 2017.
+
+\bibitem{Dat2018}
+P.~T. Dat, A.~Kanno, N.~Yamamoto, and T.~Kawanishi, ``{Radio-over-Fiber-based
+  Seamless Fiber–Wireless Convergence for Small Cell and Linear Cell
+  Networks},'' in {\em Optical Fiber Communication Conference}, (Washington,
+  D.C.), p.~M4J.5, OSA, 2018.
+
+\bibitem{Liu2017}
+S.~Liu, M.~Xu, J.~Wang, F.~Lu, W.~Zhang, H.~Tian, and G.-K. Chang, ``{A
+  Multilevel Artificial Neural Network Nonlinear Equalizer for Millimeter-Wave
+  Mobile Fronthaul Systems},'' {\em Journal of Lightwave Technology}, vol.~35,
+  pp.~4406--4417, oct 2017.
+
+\bibitem{Wang2017}
+J.~Wang, ``{Nonlinear Impairments and Mitigation Technologies for the Next
+  Generation Fiber-Wireless Mobile},'' no.~May, 2017.
+
+\bibitem{Liu2019}
+J.~Liu, X.~Zou, and W.~Bai, ``{Performance Enhancement of UFMC based Radio over
+  Fiber System Using ANN Equalizer},'' vol.~1, no.~1, pp.~4--6, 2019.
+
+\bibitem{Liu2018a}
+S.~Liu, Y.~M. Alfadhli, S.~Shen, M.~Xu, H.~Tian, and G.~K. Chang, ``{A Novel
+  ANN Equalizer to Mitigate Nonlinear Interference in Analog-RoF Mobile
+  Fronthaul},'' {\em IEEE Photonics Technology Letters}, vol.~30, no.~19,
+  pp.~1675--1678, 2018.
+
+\end{thebibliography}
