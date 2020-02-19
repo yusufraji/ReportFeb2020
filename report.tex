@@ -5,13 +5,12 @@
 \usetheme{default}
 \usecolortheme{default}
 \usefonttheme{serif}
-\usepackage[acronym]{glossaries}
 \usepackage{bibentry}
 \usepackage{bookmark}
 \usepackage{graphicx}
+\usepackage{cite}
 \graphicspath{ {./images/} }
 
-\input{acronyms.tex}
 
 \title[60GHz RoF]{Investigation on 60GHz Radio-over-Fibre System Employing MIMO and GFDM Modulation converged with OFDM-PON}
 \subtitle{Progress Report}
@@ -40,11 +39,11 @@
     \frametitle{Background}
     \begin{itemize}
         \item New demands such as data rate, bandwidth, latency\dots has led to new technologies and services in modern communications 
-        \item The 5th generation wireless communication (5G) promises to cater for such demands \cite{Sarmiento2018,Eldessoki2017}
-        \item New suitable waveforms that will deliver 5G services have been proposed to replace OFDM \cite{Delmade2017,Tipan2018,Browning2017}
+        \item The 5th generation wireless communication (5G) promises to cater for such demands~\cite{Sarmiento2018,Eldessoki2017}
+        \item New suitable waveforms that will deliver 5G services have been proposed to replace OFDM~\cite{Delmade2017,Tipan2018,Browning2017}
         \item In the mean-time, those new waveforms will have to coexist with OFDM on the same band to transition fully to 5G
-        \item Multiple waveform for multi services in a mixed numerology setup is also proposed \cite{Eldessoki2017}
-        \item Convergence of optical and wireless communication is important to leverage the merits of optical communication in the delivery of mobile signals \cite{Tipan2018,Chang2017,Dat2018,Browning2017}
+        \item Multiple waveform for multi services in a mixed numerology setup is also proposed~\cite{Eldessoki2017}
+        \item Convergence of optical and wireless communication is important to leverage the merits of optical communication in the delivery of mobile signals~\cite{Tipan2018,Chang2017,Dat2018,Browning2017}
         \item However, this convergence introduces:
         \begin{itemize}
             \item optical media impairments to the wireless users
@@ -63,7 +62,7 @@
 \subsection{Nonlinear Impairment Sources}
 \begin{frame}
     \frametitle{Nonlinear Impairment Sources}
-    Nonlinear impairments exist in every part of the transmission link \cite{Liu2017}.
+    Nonlinear impairments exist in every part of the transmission link~\cite{Liu2017}.
     The effect becomes serious when analog fiber and wireless links are cascaded together.
     The sources of nonlinear impairments in mm-wave RoF systems can be grouped into two:
     \begin{itemize}
@@ -96,7 +95,7 @@
 \subsection{Nonlinear Subcarrier Intermodulations}
 
 \begin{frame}
-    \frametitle{Nonlinear Subcarrier Intermodulations \cite{Wang2017}}
+    \frametitle{Nonlinear Subcarrier Intermodulations~\cite{Wang2017}}
     \begin{itemize}
         \item The generation of harmonic and beat frequency components among different subcarriers
         \item Mainly contributed by third-order beat among three subcarriers
@@ -108,7 +107,7 @@
     \end{itemize}
 \end{frame}
 \begin{frame}
-    \frametitle{Nonlinear Subcarrier Intermodulations \cite{Wang2017}}
+    \frametitle{Nonlinear Subcarrier Intermodulations~\cite{Wang2017}}
 
     \begin{figure}[h]
 
@@ -120,7 +119,7 @@
 \end{frame}
 
 \begin{frame}
-    \frametitle{Nonlinear Subcarrier Intermodulations---Single and multiband \cite{Wang2017}}
+    \frametitle{Nonlinear Subcarrier Intermodulations---Single and multiband~\cite{Wang2017}}
     \begin{figure}[h]
         \includegraphics[width=0.9\textwidth]{single-and-multiband-IM.PNG}
         \caption{Nonlinear impairments of single-band and multiband OFDM signals. (a) Interference induced by intra-band IMs. (b) Interference induced by inter-band IMs.}
@@ -156,20 +155,19 @@
 \end{frame}
 
 \begin{frame}
-    \frametitle{Digital Predistortion---How it works (Block representation) \cite{Wang2017}}
-    \begin{figure}
+    \frametitle{Digital Predistortion---How it works (Block representation)~\cite{Wang2017}}
+    \begin{figure}\label{predistortion}
         \includegraphics[width=\textwidth]{predistortion}
         \caption{Linearization based on digital predistortion for analog MFH.}
-        \label{predistortion}
     \end{figure}
 \end{frame}
 
 \begin{frame}
     \frametitle{Digital Predistortion---How it works}
     \begin{itemize}
-        \item The channel response and digital predistorter have two complimentary transfer functions, shown in inset of Fig. \ref{predistortion}
+        \item The channel response and digital predistorter have two complimentary transfer functions, shown in inset of Fig.~\ref{predistortion}
         \item The nonlinear response cancel each other and an overall linearized channel is obtained
-        \item The transfer function of any bandwidth-limited nonlinear system can be modeled by polynomial with memory effect, as shown in equation \ref{memPolyModel}
+        \item The transfer function of any bandwidth-limited nonlinear system can be modeled by polynomial with memory effect, as shown in equation~\ref{memPolyModel}
         \item Memory effect is used to capture the inter-symbol interference (ISI)
         \item The memory depth equal the number of interfering symbols 
         \item Memory polynomial can model any nonlinear bandwidth-limited system, including amplifiers, modulators, and fiber dispersion and nonlinearities
@@ -180,10 +178,10 @@
 
 \begin{frame}
     \frametitle{Digital Predistortion---Memory polynomial effect}
-    \begin{figure}
+    \begin{figure}\label{memorypolynomial}
         \includegraphics[width=0.7\textwidth]{memory-polynomial.PNG}
         \caption{Memory polynomial model of analog MFH channel with memory depth of M and nonlinearity order of K.}
-        \label{memorypolynomial}
+
     \end{figure}
 \end{frame}
 
@@ -242,11 +240,11 @@
 \end{frame}
 
 \begin{frame}
-    \frametitle{Review---Enhancement of UFMC based RoF System Using ANN Equalizer \cite{Liu2019}}
+    \frametitle{Review---Enhancement of UFMC based RoF System Using ANN Equalizer~\cite{Liu2019}}
     \begin{itemize}
         \item Numerical simulation of UFMC waveform in RoF system equipped with ANN equalizer is performed by MATLAB and VPI
-        \item The first UFMC symbol is used as the training sequence (\(1\%\) of total symbol lenght)
-        \item Presents the constellation of the original received signals without dispersion compansation(DC) or equaliztion (EQ)
+        \item The first UFMC symbol is used as the training sequence (\( 1\% \) of total symbol lenght)
+        \item Presents the constellation of the original received signals without dispersion compansation (DC) or equaliztion (EQ)
         \item Constellation points of signals equalized by ANN group more tightly and are condensed to the ideal points
         \item Presents the 
         \item This work proves that ANN equalizer is able to compensate for nonlinear impairments and achieves lower EVM than ZF equalizer
@@ -254,7 +252,7 @@
 \end{frame}
 
 \begin{frame}
-    \frametitle{Review---Enhancement of UFMC based RoF System Using ANN Equalizer \cite{Liu2019}}
+    \frametitle{Review---Enhancement of UFMC based RoF System Using ANN Equalizer~\cite{Liu2019}}
     \begin{figure}
         \includegraphics[width=0.7\textwidth]{ANNEqualizer.PNG}
         \caption{Structure of ANN equalizer based RoF system.}
@@ -262,7 +260,7 @@
 \end{frame}
 
 \begin{frame}
-    \frametitle{Review---Enhancement of UFMC based RoF System Using ANN Equalizer \cite{Liu2019}}
+    \frametitle{Review---Enhancement of UFMC based RoF System Using ANN Equalizer~\cite{Liu2019}}
     \begin{figure}
         \includegraphics[width=0.8\textwidth]{ANNEqualizerConstellation.PNG}
         \caption{Constellation of UFMC waveforms for different fiber lengths (simulation)}
@@ -270,7 +268,7 @@
 \end{frame}
 
 \begin{frame}
-    \frametitle{Review---Enhancement of UFMC based RoF System Using ANN Equalizer \cite{Liu2019}}
+    \frametitle{Review---Enhancement of UFMC based RoF System Using ANN Equalizer~\cite{Liu2019}}
     \begin{figure}
         \includegraphics[width=\textwidth]{ANNEqualizerResult.PNG}
         \caption{(a) EVMs of UFMC waveforms for different transmission distances (simulation). (b)- (d) Constellations of UFMC waveforms with different equalizers for different transmission distances (experiment).}
@@ -278,7 +276,7 @@
 \end{frame}
 
 \begin{frame}
-    \frametitle{Review---A Novel ANN Equalizer to mitigate Nonlinear Interference in Analog-RoF Nobile Fronthaul \cite{Liu2018a}}
+    \frametitle{Review---A Novel ANN Equalizer to mitigate Nonlinear Interference in Analog-RoF Nobile Fronthaul~\cite{Liu2018a}}
     \begin{figure}
         \includegraphics[width=0.6\textwidth]{novelANN.PNG}
         \caption{A-RoF-based fronthaul consisting of three individual wireless channels and one common fiber channel.}
@@ -286,7 +284,7 @@
 \end{frame}
 
 \begin{frame}
-    \frametitle{Review---A Novel ANN Equalizer to mitigate Nonlinear Interference in Analog-RoF Nobile Fronthaul \cite{Liu2018a}}
+    \frametitle{Review---A Novel ANN Equalizer to mitigate Nonlinear Interference in Analog-RoF Nobile Fronthaul~\cite{Liu2018a}}
     \begin{figure}
         \includegraphics[width=\textwidth]{novelANNTraining.PNG}
         \caption{Constellations of the equalized signals when transmitting 4 users with (a) 4, (b) 24 and (c) 40 neurons in hidden layers.}
@@ -294,18 +292,18 @@
 \end{frame}
 
 \begin{frame}
-    \frametitle{Review---A Novel ANN Equalizer to mitigate Nonlinear Interference in Analog-RoF Nobile Fronthaul \cite{Liu2018a}}
+    \frametitle{Review---A Novel ANN Equalizer to mitigate Nonlinear Interference in Analog-RoF Nobile Fronthaul~\cite{Liu2018a}}
     \begin{figure}
         \includegraphics[width=\textwidth]{novelANNSetup.PNG}
         \caption{Experimental setup of the A-RoF-based MFH testbed that uses an ANN-NLE to co-equalize multiple users. 
-        Inset (a) is the frequency spectrum of the 4 users at DU. (b) is the measured nonlinear transfer curve of the wireless channel. 
+        Inset (a) is the frequency spectrum of the 4 users at DU.\@ (b) is the measured nonlinear transfer curve of the wireless channel. 
         (c) is the measured transfer curve of MZM, (d) and (e) are the EVMs of the received SC-FDMA signals as functions of VRMS at the 
         output of AWG when suffering from wireless channel nonlinearity and fiber nonlinearity.}
     \end{figure}
 \end{frame}
 
 \begin{frame}
-    \frametitle{Review---A Novel ANN Equalizer to mitigate Nonlinear Interference in Analog-RoF Nobile Fronthaul \cite{Liu2018a}}
+    \frametitle{Review---A Novel ANN Equalizer to mitigate Nonlinear Interference in Analog-RoF Nobile Fronthaul~\cite{Liu2018a}}
     \begin{figure}
             
         \includegraphics[width=0.6\textwidth]{novelANNResult.PNG}             
@@ -315,9 +313,9 @@
 \section{References}
 \begin{frame}[t,allowframebreaks]
     \frametitle{References}
-    \bibliographystyle{ieeetr}
     \bibliography{C:/Users/rajiy/Documents/MENDEL\string~1/library}
-    
+    \bibliographystyle{ieeetr}
+
 \end{frame}
 
 
